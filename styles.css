@@ -1,0 +1,330 @@
+/* Generali */
+
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Athiti', sans-serif;
+	font-size: 20px;
+}
+a {
+	color: #ff3864;
+}
+
+/* Menu */
+
+.menu {
+	padding: 20px;
+}
+.menu .page {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 200px;
+}
+.menu-link {
+	cursor: pointer;
+	z-index: 21;
+}
+#myDIV {
+	display: none;
+}
+.link {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: 75px;
+	background-color: #ffffff;
+	z-index: 20;
+}
+.link li {
+	list-style: none;
+	font-weight: 700;
+	font-size: 22px;
+	text-align: center;
+	padding: 20px;
+	border-bottom: 1px solid #f8f8f8;
+}
+.link li a {
+	text-decoration: none;
+	color: #000000;
+}
+.link li a:hover {
+	color: #0db7b7;
+}
+
+/* Bio */
+
+.bio {
+	padding: 20px 30px;
+ 	background-image: url('images/bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bio p {
+	padding-bottom: 20px;
+}
+.bio-img {
+	border-radius: 100%;
+	width: 100%;
+	border: 5px solid #0db7b7;
+	margin-bottom: 20px;
+}
+
+/* Work */
+
+.work {
+	padding: 30px;
+	background-color: #ff3864;
+	color: #ffffff;
+}
+.work-box {
+	margin-bottom: 20px;
+}
+.work-box:last-of-type {
+	margin-bottom: 0px;
+}
+.work-title {
+	font-size: 25px;
+	line-height: 28px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+.work-img-box {
+	background-color: #0db7b7;
+}
+.work-img {
+	width: 100%;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	filter: grayscale(100%);
+}
+.work-img:hover {
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+.work-descr {
+	margin-top: 10px;
+}
+.work-details {
+	display: flex;
+	align-items: center;
+	font-style: italic;
+	padding-top: 10px;
+}
+.work-details span {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+/* Skills */
+
+.skills {
+	padding: 20px 30px 50px 30px;
+ 	background-image: url('images/bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.skills-title {
+	font-size: 30px;
+	line-height: 33px;
+	font-weight: 900;	
+}
+.skills-categ {
+	font-size: 25px;
+	line-height: 28px;
+	font-weight: 900;
+	margin-top: 20px;
+}
+.skills .skills-column > ul {
+	list-style: none;
+}
+.skills-total {
+	background-color: #0db7b7;
+	color: #ffffff;
+}
+.skills-num {
+	background-color: #4ecdc4;
+}
+
+/* Contact */
+
+.contact {
+	padding: 30px;
+	background-color: #ff3864;
+	color: #ffffff;
+}
+.contact-title {
+	font-size: 30px;
+	line-height: 33px;
+	font-weight: 900;	
+}
+.form-row {
+	padding-bottom: 20px;
+	text-align: left;
+}
+label {
+	display: block;
+}
+input[type='text'], input[type='email'], textarea {
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	padding: 15px;
+ 	resize: none;
+}
+input[type='text']:hover, input[type='email']:hover, textarea:hover {
+	border: 2px solid #ce325b;
+}
+.button-form {
+	padding: 10px 20px;
+	background-color: #0db7b7;
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	font-weight: 900;
+	display: inline;
+}
+.button-form:hover {
+	background-color: #4ecdc4;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+address {
+	font-style: normal;
+}
+
+/* -------- Media Query -------- */
+
+/* -- Tablet Styles -- */
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+
+	/* Bio */
+
+	.bio-img-box {
+		text-align: center;
+	}
+	.bio-img {
+		width: 60%;
+		margin-bottom: 20px;
+	}
+
+}
+
+/* -- Mobile Styles -- */
+@media only screen and (min-width: 900px) {
+
+	/* Menu */
+
+	.logo {
+		width: 320px;
+	}
+	.toggle {
+		display: none;
+	}
+	#myDIV {
+		display: inline;
+	}
+	.link {
+		position: relative;
+		top: 0;
+		right: 0;
+		background-color: #ffffff;
+		display: flex;
+	}
+	.link li {
+		padding: 20px 0px;
+		margin-right: 40px;
+		border-bottom: none;
+	}
+	.link li:last-of-type {
+		margin-right: 0px;
+	}
+
+}
+
+/* -- Desktop Styles -- */
+@media only screen and (min-width: 701px) {
+
+	/* General */
+
+	.page {
+		max-width: 1200px;
+		margin: 0px auto;
+	}
+
+	/* Bio */
+
+	.bio .page {
+		display: flex;
+		align-items: center;
+	}
+	.bio-img-box {
+		flex: 30%;
+	}
+	.bio-img {
+		margin-bottom: 0px;
+	}
+	.bio-info {
+		flex: 70%;
+		padding-left: 20px;
+	}
+
+	/* Work */
+
+	.work .page {
+		display: flex;
+	}
+	.work-box {
+		flex: 50%;
+		margin-right: 30px;
+	}
+	.work-box:last-of-type {
+		margin-right: 0px;
+	}
+
+	/* Skills */
+
+	.skills .page {
+		display: flex;
+	}
+	.skills-title {
+		display: none;
+	}
+	.skills-column {
+		flex: 50%;
+		padding-right: 20px;
+	}
+	.skills-column:last-of-type {
+		padding-right: 0px;
+	}
+
+	/* Contact */
+
+	.identity {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.two-col {
+		flex: 50%;
+		box-sizing: border-box;
+		margin-right: 20px;
+	}
+	.two-col:last-of-type {
+		margin-right: 0px;
+	}
+
+}
